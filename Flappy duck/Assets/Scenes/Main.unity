@@ -135,12 +135,12 @@ GameObject:
   - component: {fileID: 69249783}
   - component: {fileID: 69249785}
   - component: {fileID: 69249788}
-  - component: {fileID: 69249787}
   - component: {fileID: 69249786}
   - component: {fileID: 69249789}
+  - component: {fileID: 69249790}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,20 +250,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &69249787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69249782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7014da41fcb38194185205fb77d6f9cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelLose: {fileID: 1892321676}
-  deathColor: {r: 0.6603774, g: 0.12148453, b: 0.12148453, a: 0.95686275}
 --- !u!58 &69249788
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -376,6 +362,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &69249790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69249782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca67d1c7c44e664d925e6f0749bac2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelLose: {fileID: 1892321676}
+  deathColor: {r: 1, g: 0, b: 0, a: 0}
 --- !u!1 &77630753
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,8 +727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 1543278063}
   score: {fileID: 78368472}
-  titleSpeed: 5
   playButton: {fileID: 415138883}
+  titleSpeed: 5
 --- !u!111 &415138887
 Animation:
   m_ObjectHideFlags: 0
@@ -1336,8 +1336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f28e94b8f3013408328b380099591a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  now_bg: {fileID: 658459078}
-  next_bg: {fileID: 4198336615706258669, guid: 316d0543cae8a41499833095c7f97b18, type: 3}
+  currentBG: {fileID: 658459078}
+  nextBG: {fileID: 4198336615706258669, guid: 316d0543cae8a41499833095c7f97b18, type: 3}
 --- !u!4 &1802239167
 Transform:
   m_ObjectHideFlags: 0
@@ -1619,8 +1619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 1543278063}
   score: {fileID: 78368472}
-  titleSpeed: 5
   playButton: {fileID: 2062609364}
+  titleSpeed: 5
 --- !u!114 &2062609364
 MonoBehaviour:
   m_ObjectHideFlags: 0

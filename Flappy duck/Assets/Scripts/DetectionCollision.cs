@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DetectCollision : MonoBehaviour
+public class DetectionCollision : MonoBehaviour
 {
     public GameObject panelLose;
     public Color deathColor;

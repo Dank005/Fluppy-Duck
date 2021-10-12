@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class CreateKnife : MonoBehaviour
+public class CreationKnives : MonoBehaviour
 {
     public GameObject knife;
     public float waitTime = 1f;

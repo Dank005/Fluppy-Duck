@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveBackground : MonoBehaviour
+public class MovingBackground : MonoBehaviour
 {
     public float speed = 5f;
 
